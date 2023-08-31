@@ -13,11 +13,11 @@ public class Process{
         this.timer = timer;
     }
     public void run_process(){
-        for(int i=0;i<burst_time;i++){
-            System.out.println("Process: "+pid+" is running. Time: "+timer);
+        for(int i=0;i<=burst_time;i++){
+            System.out.println("Process: "+pid+" is running. Time: "+timer.time);
             timer.time++;
         }
-        System.out.println("Process: "+pid+" has finished running. Time: "+timer);
+        System.out.println("Process: "+pid+" has finished running. Time: "+timer.time);
     }
     public int getPid() {
         return pid;
